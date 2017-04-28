@@ -37,8 +37,12 @@ Json::Value GenerateBuildingModel(string path);
 int main()
 {
     string s="MDOF-shear.json";
-    Json::Value bldg=GenerateBuildingModel(s);
-
+    Json::Value buildingModel=GenerateBuildingModel(s);
+    ofstream os;
+    os.open("BuildingModel.json");
+    Json::StyledWriter sw;
+    os << sw.write(buildingModel);
+    os.close();
     return 0;
 }
 

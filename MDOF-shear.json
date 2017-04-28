@@ -4,43 +4,13 @@
 	"BuildingDescription": {
 		"id": 1,
 		"name": "CE office at UC Berkeley",
-		"strucType": "RCFrame",	//RM,URM,Steel,Wood,RCShearWall,RCFrameShearWall,
+		"strucType": "C1L",	//RM,URM,Steel,Wood,RCShearWall,RCFrameShearWall,
 		"year": 1999,
 		"s_height": 3.6,
-		"noStories": 3,
+		"noStories": 4,
 		"area": 3560.2,
 		"replacementValue": 1.8e6,
 		"function": "office"
 	}
-
-}
-
-
-
-
-
-//v1------------------------------------------
-{
-	//Basic GIS data
-	"id": 1,
-	"name": "CE office at UC Berkeley",
-	"strucType": "RCFrame",	//RM,URM,Steel,Wood,RCShearWall,RCFrameShearWall,
-	"year": 1999,
-	"s_height": 3.6,
-	"noStories": 3,
-	"area":3560.2,
-	"replacementValue":1.8e6,
-	"function": "office",	
-	
-	//Derived parameters based on HAZUS database
-	"T1": 0.6,
-	"T2": 0.2,
-	"dampingRatio": 0.05,
-	"damageCriteria": [0.0033, 0.0058, 0.0156, 0.04],
-	"interstoryParams": [
-		{"K0": 2.81e9, "Sy": 1.01e7,"eta": 0.183254,"C": 1000,"gamma": 0.5,"eta_soft": -0.001,"alpha": 3,"beta": 1,"a_k": 0.2,"omega": 0.2},
-		[2.81e9, 9.06e6, 0.183254, 1000, 0.5, -0.001, 3, 1, 0.1, 0.2],
-		[2.81e9, 7.05e6, 0.183254, 1000, 0.5, -0.001, 3, 1, 0.1, 0.2]
-	]
 
 }
