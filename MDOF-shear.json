@@ -1,16 +1,19 @@
 //v2-----------------------------------------
 {
 	//Input data
-	"BuildingDescription": {
+	"GeneralInfo": {
 		"id": 1,
 		"name": "CE office at UC Berkeley",
-		"strucType": "C1L",	//RM,URM,Steel,Wood,RCShearWall,RCFrameShearWall,
-		"year": 1999,
-		"s_height": 3.6,
-		"noStories": 4,
-		"area": 3560.2,
 		"replacementValue": 1.8e6,
 		"function": "office"
+	},
+	
+	"BuildingDescription": {
+		"strucType": "C2L",	//Hazus classification
+		"year": 1999,
+		"s_height": 3.6,
+		"noStories": 3,
+		"area": 3560.2
 	}
 
 }
